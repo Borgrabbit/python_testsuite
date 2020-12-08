@@ -3,6 +3,7 @@ import copy
 import collections
 import re
 import dis
+from class_test import test_class
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
@@ -44,8 +45,25 @@ def leftextend():
     etd = a_deque.extendleft(b)
     print(f'{a_deque}')
 
+def syntax_check():
+
+    print(100_1099)
+
+class Main:
+    def __some_method(self):
+        print('main somemethod')
+
+class Sub(Main):
+    var = 1
+    _var = 1
+    def some_method(self):
+        print('sub somemethod')
 
 if __name__ == '__main__':
+    syntax_check()
+    print(dir(Sub()))
+    t = test_class()
+    print(t.test)
     pass
     # leftextend()
     # a=256
