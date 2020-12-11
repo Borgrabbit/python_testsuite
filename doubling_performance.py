@@ -3,6 +3,9 @@ import dis
 from collections import deque
 # import textdistance
 
+class Performance:
+    def __init__(self):
+        self.test = 0
 
 # def test1():
 #     ham1 = textdistance.Levenshtein()
