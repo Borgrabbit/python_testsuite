@@ -48,12 +48,10 @@ if __name__ == '__main__':
     # process()
 
     m1 = memory_profiler.memory_usage()
-    # t1 = time.clock()
 
     st = time.time_ns()
     cubes = check_even_gen(range(100000000))
     # cubes = check_even_loop(range(100000000))
-    # t2 = time.time.clock()
     ed = time.time_ns()
     m2 = memory_profiler.memory_usage()
     time_diff = ed - st
